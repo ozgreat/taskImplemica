@@ -104,7 +104,7 @@ class VariableSwaperTest {
   private void check(int a, int b) {
     String inStr = "1" + System.lineSeparator() + a + System.lineSeparator() + b + System.lineSeparator();
     String answerMain = "Choose a task number(1-5) or another number to exit: " + System.lineSeparator()
-            + "x: " + b + " y: " + a + System.lineSeparator();
+        + "x: " + b + " y: " + a + System.lineSeparator();
 
     MainTestService.testOutMain(inStr, answerMain);
   }

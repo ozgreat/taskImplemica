@@ -34,7 +34,7 @@ public class HouseAndFloorFinder {
   public HouseAndFloorFinder(int floorInHouse, int roomAtFloor) throws IllegalArgumentException {
     if (floorInHouse <= 0 || roomAtFloor <= 0 || (MAX_VALUE / roomAtFloor) < floorInHouse) {
       throw new IllegalArgumentException("Expected: floorInHouse > 0, roomAtFloor > 0 ,floorInHouse*roomAtFloor <= MAX_VALUE. " +
-              "Got: floorInHouse = " + floorInHouse + " roomAtFloor = " + roomAtFloor);
+          "Got: floorInHouse = " + floorInHouse + " roomAtFloor = " + roomAtFloor);
     }
 
     this.floorInHouse = floorInHouse;

@@ -457,10 +457,10 @@ class GcdOf4NumbersTest {
 
   private void testThrow(Integer a, Integer b, Integer c, Integer d) {
     String inStr = "3" + System.lineSeparator() + a + System.lineSeparator() +
-            b + System.lineSeparator() + c + System.lineSeparator() + d + System.lineSeparator();
+        b + System.lineSeparator() + c + System.lineSeparator() + d + System.lineSeparator();
 
     MainTestService.testErrMain(inStr, "Expected: x1,x2,x3,x4 is not MIN_VALUE. Got: x1= " + a + " x2= " + b +
-            " x3= " + c + " x4= " + d + System.lineSeparator());
+        " x3= " + c + " x4= " + d + System.lineSeparator());
 
     try {
       GcdOf4Numbers.getGcdOf4Numbers(a, b, c, d);
@@ -499,9 +499,9 @@ class GcdOf4NumbersTest {
 
   private void check(Integer answer, Integer a, Integer b, Integer c, Integer d) {
     String inStr = "3" + System.lineSeparator() + a + System.lineSeparator() +
-            b + System.lineSeparator() + c + System.lineSeparator() + d + System.lineSeparator();
+        b + System.lineSeparator() + c + System.lineSeparator() + d + System.lineSeparator();
     String answerMain = "Choose a task number(1-5) or another number to exit: " + System.lineSeparator() +
-            answer + System.lineSeparator();
+        answer + System.lineSeparator();
 
     MainTestService.testOutMain(inStr, answerMain);
 

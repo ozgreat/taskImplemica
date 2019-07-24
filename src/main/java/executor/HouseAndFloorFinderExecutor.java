@@ -4,6 +4,10 @@ import tasks.HouseAndFloorFinder;
 
 import java.util.Scanner;
 
+/**
+ * Represents an operation that accepts {@code Scanner} argument and init parameters for {@code HouseAndFloorFinder},
+ * than execute them
+ */
 public class HouseAndFloorFinderExecutor implements Executable {
   /**
    * Init parameters for {@code HouseAndFloorFinder} and execute them

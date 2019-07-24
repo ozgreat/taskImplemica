@@ -15,6 +15,7 @@ public class FibonacciFinder {
    * @return Nth Fibonacci number
    * @throws NumberFormatException N is less than 0
    */
+
   public static BigInteger getFibonacci(BigInteger n) throws IllegalArgumentException {
     if (n.compareTo(BigInteger.ZERO) < 0) {
       throw new IllegalArgumentException("Expected n >= 0. Got: n = " + n);
@@ -24,7 +25,7 @@ public class FibonacciFinder {
       return BigInteger.ZERO;
     }
 
-    if (n.compareTo(BigInteger.valueOf(2)) <= 0) {
+    if (n.compareTo(BigInteger.TWO) <= 0) {
       return BigInteger.ONE;
     }
 

@@ -398,7 +398,7 @@ class HouseAndFloorFinderTest {
 
   private void test(Integer roomAtFloor, Integer floorsAtHouse, Integer n, String answer) {
     String inStr = "2" + System.lineSeparator() + floorsAtHouse + System.lineSeparator() + roomAtFloor +
-            System.lineSeparator() + n + System.lineSeparator();
+        System.lineSeparator() + n + System.lineSeparator();
     String answerStr = "Choose a task number(1-5) or another number to exit: " + System.lineSeparator() + answer + System.lineSeparator();
 
     MainTestService.testOutMain(inStr, answerStr);
@@ -409,10 +409,10 @@ class HouseAndFloorFinderTest {
 
   private void testThrowHouse(Integer roomAtFloor, Integer floorInHouse, Integer roomNumber) {
     String inStr = "2" + System.lineSeparator() + floorInHouse + System.lineSeparator() + roomAtFloor +
-            System.lineSeparator() + roomNumber + System.lineSeparator();
+        System.lineSeparator() + roomNumber + System.lineSeparator();
 
     MainTestService.testErrMain(inStr, "Expected: floorInHouse > 0, roomAtFloor > 0 ,floorInHouse*roomAtFloor <= MAX_VALUE." +
-            " Got: floorInHouse = " + floorInHouse + " roomAtFloor = " + roomAtFloor + System.lineSeparator());
+        " Got: floorInHouse = " + floorInHouse + " roomAtFloor = " + roomAtFloor + System.lineSeparator());
 
     try {
       HouseAndFloorFinder houseAndFloorFinder = new HouseAndFloorFinder(floorInHouse, roomAtFloor);
@@ -425,7 +425,7 @@ class HouseAndFloorFinderTest {
 
   private void testThrowRoom(Integer roomAtFloor, Integer floorInHouse, Integer roomNumber) {
     String inStr = "2" + System.lineSeparator() + floorInHouse + System.lineSeparator() + roomAtFloor + System.lineSeparator()
-            + roomNumber + System.lineSeparator();
+        + roomNumber + System.lineSeparator();
 
 
     MainTestService.testErrMain(inStr, "Expected: " + "0 < roomNumber" + ". Got: roomNumber = " + roomNumber + System.lineSeparator());

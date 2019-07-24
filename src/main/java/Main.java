@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    Map<Integer, Executable> menu = new HashMap<>(); //Int - number of task, executor.Executable - lambda to launch task
+    Map<Integer, Executable> menu = new HashMap<>();
 
     menu.put(1, new VariableSwaperExecutor());
     menu.put(2, new HouseAndFloorFinderExecutor());

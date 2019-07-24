@@ -59,7 +59,7 @@ public class GcdOf4Numbers {
   public static Integer getGcdOf4Numbers(int x1, int x2, int x3, int x4) throws IllegalArgumentException {
     if (x1 == MIN_VALUE || x2 == MIN_VALUE || x3 == MIN_VALUE || x4 == MIN_VALUE) {
       throw new IllegalArgumentException("Expected: x1,x2,x3,x4 is not MIN_VALUE. Got: x1= " + x1 + " x2= " + x2 +
-              " x3= " + x3 + " x4= " + x4);
+          " x3= " + x3 + " x4= " + x4);
     }
 
     int gcd2;

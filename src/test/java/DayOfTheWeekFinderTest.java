@@ -1619,7 +1619,7 @@ class DayOfTheWeekFinderTest {
   private void test(String answer, DayOfTheWeek ng, int day, Month month) {
     String inStr = "5 " + (ng.ordinal() + 1) + " " + day + " " + (month.ordinal() + 1) + System.lineSeparator();
     String answerMain = "Choose a task number(1-5) or another number to exit: " + System.lineSeparator()
-            + answer + System.lineSeparator();
+        + answer + System.lineSeparator();
 
     MainTestService.testOutMain(inStr, answerMain);
 

@@ -26,13 +26,11 @@ public class DayOfTheWeekFinder {
    * @throws NumberFormatException day less than 1 or bigger than day in current month
    */
   public static DayOfTheWeek getDayOfTheWeek(DayOfTheWeek dayOfNewYear, int day, Month month) throws IllegalArgumentException {
-    int dayOfTheYear = 0;
-
-
     if (day > month.getDays() || day < 1) {
       throw new IllegalArgumentException("Expected day > 0 and day < " + month.getDays() + ". Got: day = " + day);
     }
 
+    int dayOfTheYear = 0;
     for (int i = 0; i < month.ordinal(); i++) {
       dayOfTheYear += Month.values()[i].getDays();
     }

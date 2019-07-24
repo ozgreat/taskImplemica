@@ -11,7 +11,7 @@ public class MainTestService {
   /**
    * Testing of output of main
    *
-   * @param inStr String that contains input, that we want to test
+   * @param inStr  String that contains input, that we want to test
    * @param outStr expected output String
    */
   public static void testOutMain(String inStr, String outStr) {
@@ -27,7 +27,7 @@ public class MainTestService {
   /**
    * Testing of errors and exceptions of main
    *
-   * @param inStr String that contains input, that we want to test
+   * @param inStr  String that contains input, that we want to test
    * @param errStr expected error stream String
    */
   public static void testErrMain(String inStr, String errStr) {

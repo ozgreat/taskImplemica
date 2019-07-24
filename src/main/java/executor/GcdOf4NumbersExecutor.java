@@ -4,6 +4,10 @@ import tasks.GcdOf4Numbers;
 
 import java.util.Scanner;
 
+/**
+ * Represents an operation that accepts {@code Scanner} argument and init parameters for {@code GcdOf4Numbers},
+ *  * than execute them
+ */
 public class GcdOf4NumbersExecutor implements Executable {
   /**
    * Init parameters for {@code GcdOf4Numbers} and execute them

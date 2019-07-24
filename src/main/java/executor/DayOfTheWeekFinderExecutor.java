@@ -6,6 +6,10 @@ import tasks.DayOfTheWeekFinder;
 
 import java.util.Scanner;
 
+/**
+ * Represents an operation that accepts {@code Scanner} argument and init parameters for {@code DayOfTheWeekFinder},
+ * than execute them
+ */
 public class DayOfTheWeekFinderExecutor implements Executable {
   /**
    * Init parameters for {@code DayOfTheWeekFinder} and execute them

@@ -4,6 +4,10 @@ import tasks.VariableSwaper;
 
 import java.util.Scanner;
 
+/**
+ * Represents an operation that accepts {@code Scanner} argument and init parameters for {@code VariableSwapergit chec},
+ * than execute them
+ */
 public class VariableSwaperExecutor implements Executable {
   /**
    * Init parameters for {@code VariableSwaper} and execute them

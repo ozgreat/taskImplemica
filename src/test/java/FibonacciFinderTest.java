@@ -81,56 +81,9 @@ class FibonacciFinderTest {
   @Test
   void exceptionTests() {
     // from -1 to -50
-    testThrow(BigInteger.valueOf(-1));
-    testThrow(BigInteger.valueOf(-2));
-    testThrow(BigInteger.valueOf(-3));
-    testThrow(BigInteger.valueOf(-4));
-    testThrow(BigInteger.valueOf(-5));
-    testThrow(BigInteger.valueOf(-6));
-    testThrow(BigInteger.valueOf(-7));
-    testThrow(BigInteger.valueOf(-8));
-    testThrow(BigInteger.valueOf(-9));
-    testThrow(BigInteger.valueOf(-10));
-    testThrow(BigInteger.valueOf(-11));
-    testThrow(BigInteger.valueOf(-12));
-    testThrow(BigInteger.valueOf(-13));
-    testThrow(BigInteger.valueOf(-14));
-    testThrow(BigInteger.valueOf(-15));
-    testThrow(BigInteger.valueOf(-16));
-    testThrow(BigInteger.valueOf(-17));
-    testThrow(BigInteger.valueOf(-18));
-    testThrow(BigInteger.valueOf(-19));
-    testThrow(BigInteger.valueOf(-20));
-    testThrow(BigInteger.valueOf(-21));
-    testThrow(BigInteger.valueOf(-22));
-    testThrow(BigInteger.valueOf(-23));
-    testThrow(BigInteger.valueOf(-24));
-    testThrow(BigInteger.valueOf(-25));
-    testThrow(BigInteger.valueOf(-26));
-    testThrow(BigInteger.valueOf(-27));
-    testThrow(BigInteger.valueOf(-28));
-    testThrow(BigInteger.valueOf(-29));
-    testThrow(BigInteger.valueOf(-30));
-    testThrow(BigInteger.valueOf(-31));
-    testThrow(BigInteger.valueOf(-32));
-    testThrow(BigInteger.valueOf(-33));
-    testThrow(BigInteger.valueOf(-34));
-    testThrow(BigInteger.valueOf(-35));
-    testThrow(BigInteger.valueOf(-36));
-    testThrow(BigInteger.valueOf(-37));
-    testThrow(BigInteger.valueOf(-38));
-    testThrow(BigInteger.valueOf(-39));
-    testThrow(BigInteger.valueOf(-40));
-    testThrow(BigInteger.valueOf(-41));
-    testThrow(BigInteger.valueOf(-42));
-    testThrow(BigInteger.valueOf(-43));
-    testThrow(BigInteger.valueOf(-44));
-    testThrow(BigInteger.valueOf(-45));
-    testThrow(BigInteger.valueOf(-46));
-    testThrow(BigInteger.valueOf(-47));
-    testThrow(BigInteger.valueOf(-48));
-    testThrow(BigInteger.valueOf(-49));
-    testThrow(BigInteger.valueOf(-50));
+    for (int i = -50; i <= -1; i++) {
+      testThrow(BigInteger.valueOf(i));
+    }
 
 
     testThrow(BigInteger.valueOf(-99999999));
@@ -154,7 +107,7 @@ class FibonacciFinderTest {
   private void test(String answerFunc, Integer n) {
     String inStr = "4" + System.lineSeparator() + BigInteger.valueOf(n) + System.lineSeparator();
     String answerMain = "Choose a task number(1-5) or another number to exit: " + System.lineSeparator()
-            + "Enter n to find n-Fibonacci:" + System.lineSeparator() + answerFunc;
+        + "Enter n to find n-Fibonacci:" + System.lineSeparator() + answerFunc;
 
     MainTestService.testOutMain(inStr, answerMain);
 
